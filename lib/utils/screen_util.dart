@@ -52,11 +52,9 @@ class ScreenUtil {
   // Responsive Dimensions
   static double getResponsiveValue({
     required double mobile,
-    double? tablet,
-    double? desktop,
+    
   }) {
-    if (isDesktop && desktop != null) return desktop;
-    if (isTablet && tablet != null) return tablet;
+    
     return mobile;
   }
 

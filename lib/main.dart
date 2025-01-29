@@ -1,5 +1,6 @@
 import 'package:chat_application/controller/auth_controller.dart';
 import 'package:chat_application/controller/login_provider.dart';
+import 'package:chat_application/utils/theme/app_colors.dart';
 import 'package:chat_application/view/home_screen.dart/home_screen.dart';
 import 'package:chat_application/view/login_screen/login_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,9 +16,9 @@ void main() {
         // Add other providers here
       ],
       child: MyApp(),
-    ),);
+    ),
+  );
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: "SFProDisplay",
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: AppColors.background,
       ),
       home: FutureBuilder(
         // Check login status when app starts
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
           }
-          
+
           // Listen to auth state changes
           return Consumer<AuthController>(
             builder: (context, auth, _) {

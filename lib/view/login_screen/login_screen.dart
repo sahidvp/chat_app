@@ -51,7 +51,7 @@ class LoginScreen extends StatelessWidget {
                   constraints: BoxConstraints(
                     maxWidth: ScreenUtil.getResponsiveValue(
                       mobile: ScreenUtil.screenWidth,
-                      tablet: 600,
+                     
                     ),
                   ),
                   child: Column(
