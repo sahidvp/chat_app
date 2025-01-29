@@ -1,5 +1,6 @@
 import 'package:chat_application/controller/auth_controller.dart';
 import 'package:chat_application/controller/login_provider.dart';
+import 'package:chat_application/controller/voice_recorder_provider.dart';
 import 'package:chat_application/utils/theme/app_colors.dart';
 import 'package:chat_application/view/home_screen.dart/home_screen.dart';
 import 'package:chat_application/view/login_screen/login_screen.dart';
@@ -13,6 +14,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (_) => LoginProvider()),
         ChangeNotifierProvider(create: (_) => AuthController()),
+        ChangeNotifierProvider(create: (_) => VoiceRecorderProvider())
         // Add other providers here
       ],
       child: MyApp(),

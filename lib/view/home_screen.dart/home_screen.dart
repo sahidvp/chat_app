@@ -1,8 +1,6 @@
 
 import 'package:chat_application/view/chat_screen/chat_screen.dart';
-import 'package:chat_application/view/login_screen/widgets/text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 import 'package:chat_application/controller/auth_controller.dart';
 import 'package:chat_application/view/login_screen/login_screen.dart';

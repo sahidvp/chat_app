@@ -12,13 +12,13 @@ class ResponsiveTextField extends StatelessWidget {
   final String? Function(String?)? validator;
 
   const ResponsiveTextField({
-    Key? key,
+    super.key,
     required this.controller,
     required this.label,
     this.isPassword = false,
     this.keyboardType,
     this.validator,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
